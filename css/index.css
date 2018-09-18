@@ -1,0 +1,101 @@
+.githup img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: fixed;
+  left: 50px;
+  top: 20px;
+  z-index: 99;
+}
+#fullpage {
+  height: 100%;
+  width: 100%;
+}
+#fullpage .section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#fullpage .section1 .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#fullpage .section1 .top img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+#fullpage .section1 .top h3 {
+  color: white;
+}
+#fullpage .section1 .bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+}
+#fullpage .section2 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#fullpage .section2 .introduce {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 800px;
+}
+#fullpage .section2 .introduce .item {
+  width: 100px;
+  height: 134px;
+  text-align: center;
+}
+#fullpage .section2 .introduce .item i {
+  font-size: 80px;
+}
+#fullpage .section2 .introduce .item p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+#fullpage .section2 .desc p {
+  font-size: 18px;
+}
+#fullpage .section3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+#fullpage .section3 .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#fullpage .section3 .container .left {
+  font-size: 20px;
+}
+#fullpage .section3 .container .right {
+  font-size: 18px;
+}
+#fullpage .section4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+#fullpage .section4 .container {
+  width: 800px;
+  height: 350px;
+  background-color: pink;
+}
