@@ -61,6 +61,7 @@
         .desc {
             p {
                 font-size: 18px;
+                text-align: center;
             }
         }
     }
@@ -71,9 +72,14 @@
             .center(row);
             .left {
                 font-size: 20px;
+                text-align: center;
+                li {
+                    list-style: none;
+                }
             }
             .right {
                 font-size: 18px;
+                text-align: center;
             }
         }
     }
@@ -83,7 +89,72 @@
         .container {
             width: 800px;
             height: 350px;
-            background-color: pink;
+            background-color: #fff;
+            color: black;
+            .center(column);
+            color:#935b4b;
+            .name {
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .time,.work {
+                font-size: 18px;
+            }
+            .job {
+                color: black;
+                font-size: 18px;
+            }
+            
+        }
+    }
+    .section5 {
+        .center(column);
+        color: white;
+        .display {
+            .center(row);
+            width: 1220px;
+            flex-wrap: wrap;
+            .item {
+                background-color: #fff;
+                margin-top: 10px;
+                box-shadow: 0 0 3px 0 black;
+                border-radius: 5px;
+                width: 564px;
+                height: 189px;
+                .center(column);
+                .name {
+                    font-size: 20px;
+                    color: #49819c;
+                }
+                .des {
+                    font-size: 14px;
+                    color: #000;
+                }
+            }
+        }
+    }
+    .section6 {
+        .center(column);
+        color: white;
+        .des {
+            width: 300px;
+            .keywords {
+                .center(row);
+                font-size: 24px;
+            }
+            p {
+                line-height: 40px;
+                font-size: 20px;
+                text-align: center;
+                &:first-child {
+                    padding-top: 30px;
+                }
+            }
+        }
+        .link {
+            font-size: 60px;
+            .center(row);
+            width: 300px;
         }
     }
 }

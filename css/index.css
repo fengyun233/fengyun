@@ -67,6 +67,7 @@
 }
 #fullpage .section2 .desc p {
   font-size: 18px;
+  text-align: center;
 }
 #fullpage .section3 {
   display: flex;
@@ -83,9 +84,14 @@
 }
 #fullpage .section3 .container .left {
   font-size: 20px;
+  text-align: center;
+}
+#fullpage .section3 .container .left li {
+  list-style: none;
 }
 #fullpage .section3 .container .right {
   font-size: 18px;
+  text-align: center;
 }
 #fullpage .section4 {
   display: flex;
@@ -97,5 +103,91 @@
 #fullpage .section4 .container {
   width: 800px;
   height: 350px;
-  background-color: pink;
+  background-color: #fff;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #935b4b;
+}
+#fullpage .section4 .container .name {
+  font-size: 24px;
+  font-weight: bold;
+}
+#fullpage .section4 .container .time,
+#fullpage .section4 .container .work {
+  font-size: 18px;
+}
+#fullpage .section4 .container .job {
+  color: black;
+  font-size: 18px;
+}
+#fullpage .section5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+#fullpage .section5 .display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 1220px;
+  flex-wrap: wrap;
+}
+#fullpage .section5 .display .item {
+  background-color: #fff;
+  margin-top: 10px;
+  box-shadow: 0 0 3px 0 black;
+  border-radius: 5px;
+  width: 564px;
+  height: 189px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#fullpage .section5 .display .item .name {
+  font-size: 20px;
+  color: #49819c;
+}
+#fullpage .section5 .display .item .des {
+  font-size: 14px;
+  color: #000;
+}
+#fullpage .section6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+#fullpage .section6 .des {
+  width: 300px;
+}
+#fullpage .section6 .des .keywords {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 24px;
+}
+#fullpage .section6 .des p {
+  line-height: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+#fullpage .section6 .des p:first-child {
+  padding-top: 30px;
+}
+#fullpage .section6 .link {
+  font-size: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
 }
