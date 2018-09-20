@@ -1,12 +1,19 @@
+body {
+    transform-style: preserve-3d;
+}
+
 .githup {
-    img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        position: fixed;
-        left: 50px;
-        top: 20px;
-        z-index: 99;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 50px;
+    top: 20px;
+    z-index: 99;
+    .swiper-slide {
+        img {
+            width: 100px;
+            height: 100px;
+        }
     }
 }
 
@@ -85,52 +92,57 @@
     }
     .section4 {
         .center(column);
-        color:white;
+        color: white;
         .container {
             width: 800px;
             height: 350px;
             background-color: #fff;
+            border-radius: 50px 20px;
+            box-shadow: 5px 5px 10px 0 #000;
             color: black;
             .center(column);
-            color:#935b4b;
+            color: #935b4b;
             .name {
                 font-size: 24px;
                 font-weight: bold;
             }
-            .time,.work {
+            .time,
+            .work {
                 font-size: 18px;
             }
             .job {
                 color: black;
                 font-size: 18px;
             }
-            
         }
     }
     .section5 {
         .center(column);
         color: white;
         .display {
-            .center(row);
-            width: 1220px;
-            flex-wrap: wrap;
-            .item {
-                background-color: #fff;
-                margin-top: 10px;
-                box-shadow: 0 0 3px 0 black;
-                border-radius: 5px;
-                width: 564px;
-                height: 189px;
-                .center(column);
-                .name {
-                    font-size: 20px;
-                    color: #49819c;
-                }
-                .des {
-                    font-size: 16px;
-                    color: #000;
-                    p {
-                        padding-left: 20px;
+            .center(column);
+            .works-container {
+                width: 800px;
+                height: 400px;
+                overflow: hidden;
+                border-radius: 50px;
+                background-color: #ccc;
+                box-shadow: 5px 5px 10px 0 #000;
+                .left,.right {
+                    a {
+                        &:hover {
+                            img {
+                                opacity: 1;
+                            }
+                        }
+                        img {
+                            width: 380px;
+                            height: 380px;
+                            margin: 10px;
+                            border-radius: 50%;
+                            opacity: .8;
+                            box-shadow: 5px 5px 10px 0 #000;
+                        }
                     }
                 }
             }

@@ -9,11 +9,27 @@
     <link rel="stylesheet" href="./lib/fullpage/jquery.fullpage.min.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
 </head>
 
 <body>
     <!-- githup链接 -->
-    <a class="githup" href="https://github.com/fengyun233"><img src="./imges/5.jpg" alt=""></a>
+    <div class="githup githup-container" id="githup-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./imges/1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./imges/2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./imges/3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./imges/4.jpg" alt="">
+            </div>
+        </div>
+    </div>
     <div id="fullpage">
         <div class="section section1">
             <div class="top">
@@ -89,31 +105,51 @@
         <div class="section section5">
             <h3 class="title">作品集</h3>
             <div class="display">
-                <div class="item">
-                    <div class="name">不急蛋糕</div>
-                    <div class="des">
-                        <p>1.基于div+css页面布局。</p>
-                        <p>2.通过通过JavaScript(jQuery框架)/插件swiper实现效果（例如轮播图及回到顶部）</p>
+                <div class="works-container" id="works-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="left pull-left">
+                                <a href="#"><img src="./imges/work1.png" alt=""></a>
+                            </div>
+                            <div class="right pull-right">
+                                <a href="#"><img src="./imges/work1.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="left pull-left">
+                                <a href="#"><img src="./imges/work2.png" alt=""></a>
+                            </div>
+                            <div class="right pull-right">
+                                <a href="#"><img src="./imges/work2.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="left pull-left">
+                                <a href="#"><img src="./imges/work3.png" alt=""></a>
+                            </div>
+                            <div class="right pull-right">
+                                <a href="#"><img src="./imges/work3.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="left pull-left">
+                                <a href="#"><img src="./imges/work4.png" alt=""></a>
+                            </div>
+                            <div class="right pull-right">
+                                <a href="#"><img src="./imges/work4.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="left pull-left">
+                                <a href="#"><img src="./imges/work5.png" alt=""></a>
+                            </div>
+                            <div class="right pull-right">
+                                <a href="#"><img src="./imges/work5.png" alt=""></a>
+                            </div>
+                        </div>
                     </div>
-                    <a class="link">作品链接</a>
-                </div>
-                <div class="item">
-                    <div class="name">全能寄件</div>
-                    <div class="des">
-                        <p>1.基于div+css页面布局,使用正则实现了登录/注册的简单验证。</p>
-                        <p>2.基于jQuery和swiper插件实现了二级菜单及顶部广告的滚动效果.</p>
-                    </div>
-                    <a class="link">作品链接</a>
-                </div>
-                <div class="item">
-                    <div class="name">墨色生香</div>
-                    <div class="des">zaihkuahskdiasiuycduiasdioasuedryqwiugb</div>
-                    <a class="link">作品链接</a>
-                </div>
-                <div class="item">
-                    <div class="name">墨色生香</div>
-                    <div class="des">zaihkuahskdiasiuycduiasdioasuedryqwiugb</div>
-                    <a class="link">作品链接</a>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
@@ -138,6 +174,7 @@
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="./lib/fullpage/jquery.fullpage.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./lib/swiper/js/swiper-3.4.2.jquery.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
 

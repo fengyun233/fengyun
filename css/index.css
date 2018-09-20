@@ -1,11 +1,17 @@
-.githup img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+body {
+  transform-style: preserve-3d;
+}
+.githup {
+  width: 100px;
+  height: 100px;
   position: fixed;
   left: 50px;
   top: 20px;
   z-index: 99;
+}
+.githup .swiper-slide img {
+  width: 100px;
+  height: 100px;
 }
 #fullpage {
   height: 100%;
@@ -104,6 +110,8 @@
   width: 800px;
   height: 350px;
   background-color: #fff;
+  border-radius: 50px 20px;
+  box-shadow: 5px 5px 10px 0 #000;
   color: black;
   display: flex;
   flex-direction: column;
@@ -132,34 +140,30 @@
 }
 #fullpage .section5 .display {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 1220px;
-  flex-wrap: wrap;
-}
-#fullpage .section5 .display .item {
-  background-color: #fff;
-  margin-top: 10px;
-  box-shadow: 0 0 3px 0 black;
-  border-radius: 5px;
-  width: 564px;
-  height: 189px;
-  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-#fullpage .section5 .display .item .name {
-  font-size: 20px;
-  color: #49819c;
+#fullpage .section5 .display .works-container {
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 50px;
+  background-color: #ccc;
+  box-shadow: 5px 5px 10px 0 #000;
 }
-#fullpage .section5 .display .item .des {
-  font-size: 16px;
-  color: #000;
+#fullpage .section5 .display .works-container .left a:hover img,
+#fullpage .section5 .display .works-container .right a:hover img {
+  opacity: 1;
 }
-#fullpage .section5 .display .item .des p {
-  padding-left: 20px;
+#fullpage .section5 .display .works-container .left a img,
+#fullpage .section5 .display .works-container .right a img {
+  width: 380px;
+  height: 380px;
+  margin: 10px;
+  border-radius: 50%;
+  opacity: .8;
+  box-shadow: 5px 5px 10px 0 #000;
 }
 #fullpage .section6 {
   display: flex;
